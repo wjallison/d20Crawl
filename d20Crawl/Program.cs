@@ -13,6 +13,8 @@ namespace d20Crawl
         static void Main(string[] args)
         {
             #region init
+
+            #region NPCTableInit
             System.IO.TextReader tr = new System.IO.StreamReader(@"MonsterTable.txt");
 
             //List<NPC> npcList = new List<NPC>();
@@ -67,9 +69,29 @@ namespace d20Crawl
                     _globals.npcArchetypes.Add(new NPC(name, hd, numHD, bonusHD, ac, atkToHitBonus, atkName, atkNum, atkDice, atkBonus));
                 }
             }
+            #endregion
+
+            #region weaponTableInit
 
 
 
+            #endregion
+
+
+
+            #region armorTableInit
+
+
+
+            #endregion
+
+
+
+            #region magicTableInit
+
+
+
+            #endregion
 
 
 
@@ -101,6 +123,11 @@ namespace d20Crawl
             {
 
             }
+        }
+
+        public void DescribeRoom(Room room)
+        {
+
         }
     }
 }

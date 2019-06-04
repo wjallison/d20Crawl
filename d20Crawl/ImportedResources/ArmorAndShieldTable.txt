@@ -1,0 +1,22 @@
+﻿Light	Cost (gp)	AC Bonus
+Padded	2	+1
+Leather	10	+2
+Studded Leather	25	+3
+Chain Shirt	100	+4
+Medium	Cost (gp)	AC Bonus
+Hide	15	+3
+Scale Mail	50	+4
+Chainmail	150	+5
+Breastplate	200	+5
+Heavy	Cost (gp)	AC Bonus
+Splint Mail	200	+6
+Banded Mail	250	+6
+Half-plate	600	+7
+Full Plate	1,500	+8
+Shields	Cost (gp)	AC Bonus
+Buckler	15	+1
+Shield, Light Wooden	3	+1
+Shield, Light Steel	9	+1
+Shield, Heavy Wooden	7	+2
+Shield, Heavy Steel	20	+2
+Tower	30	+4

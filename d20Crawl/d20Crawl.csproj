@@ -54,10 +54,14 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ImportedResources\ArmorAndShieldTable.txt" />
+    <Content Include="ImportedResources\MagicTable.txt" />
     <Content Include="ImportedResources\MonsterTable.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="ImportedResources\RoomDescriptions.txt" />
+    <Content Include="ImportedResources\SaveChars.txt" />
+    <Content Include="ImportedResources\WeaponTable.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

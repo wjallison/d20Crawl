@@ -1,0 +1,52 @@
+﻿Two-Handed			Weapon	Cost (gp)	Damage	Range (ft.)
+Chain, spiked	25	2d4	–
+Falchion	75	1d6	–
+Flail, heavy	15	1d8	–
+Glaive	8	1d8	–
+Greatave	20	1d10	–
+Great club	5	1d8	–
+Greatsword	50	2d6	–
+Guisarme	9	2d4	–
+Halberd	10	1d10	–
+Lance	10	1d8	–
+Longspear	5	1d8	–
+Quarterstaff	-	1d6	–
+Scythe	18	2d4	–
+Spear	2	1d8	20
+Light			Weapon	Cost (gp)	Damage	Range (ft.)
+Unarmed	-	1d3	–
+Axe, thowing	8	1d6	10
+Dagger	2	1d4	10
+Hammer, light	1	1d6	20
+Handaxe	6	1d4	–
+Mace, light	5	1d6	–
+Pick, light	4	1d4	–
+Sap	1	1d6	–
+Sickle	6	1d6	–
+Sword, short	10	1d6	–
+One-Handed			Weapon	Cost (gp)	Damage	Range (ft.)
+Battleaxe	10	1d8	–
+Club	-	1d6	10
+Flail	8	1d8	–
+Longsword	15	1d8	–
+Mace, heavy	12	1d8	–
+Morningstar	8	1d8	–
+Pick, heavy	8	1d6	–
+Rapier	20	1d6	–
+Scimitar	15	1d6	–
+Shortspear	1	1d6	20
+Sword, bastard	35	1d10	–
+Trident	15	1d8	10
+Warave	30	1d10	–
+Warhammer	12	1d8	–
+Whip	1	1d3	–
+Ranged			Weapon	Cost (gp)	Damage	Range (ft.)
+Crossbow, hand	100	1d4	30
+Crossbow, heavy	50	1d10	120
+Crossbow, light	35	1d8	80
+Dart	0.5	1d4	20
+Javelin	1	1d6	30
+Longbow	75	1d8	100
+Net	20	-	10
+Shortbow	30	1d6	60
+Sling	-	1d4	50

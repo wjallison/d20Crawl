@@ -10,6 +10,7 @@ namespace d20Crawl
     {
         public static List<NPC> npcArchetypes = new List<NPC>();
 
+        public static List<Item> lootTable = new List<Item>();
 
 
 
