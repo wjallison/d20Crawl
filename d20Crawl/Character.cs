@@ -17,6 +17,20 @@ namespace d20Crawl
         public int maxHP;
         public int hp;
 
+        public delegate void turnEvent(object sender);
+        public event turnEvent takeTurn;
+
+        public int turnTimer = 10;
+        public void TurnIter(int iter = 1)
+        {
+            turnTimer -= iter;
+            if(turnTimer <= 0)
+            {
+                takeTurn(this);
+                turnTimer = 10;
+            }
+        }
+
         public bool toHitAtAdvantage = false;
         public bool toHitAtDisadvantage = false;
 

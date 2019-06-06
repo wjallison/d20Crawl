@@ -97,8 +97,15 @@ namespace d20Crawl
 
             List<AC> initACs = new List<AC>();
             initACs.Add(new AC("WarriorOne", AC.Job.Warrior, AC.Race.Dwarf));
+            
             initACs.Add(new AC("WarriorTwo", AC.Job.Warrior, AC.Race.Human));
             initACs.Add(new AC("RogueOne:AStarWarsStory", AC.Job.Rogue, AC.Race.Halfling));
+
+            for(int i = 0; i < 3; i++)
+            {
+                initACs[i].takeTurn += character_turn;
+            }
+
             Party party = new Party(initACs);
 
 
@@ -115,6 +122,11 @@ namespace d20Crawl
 
 
             Console.ReadKey();
+        }
+
+        static void character_turn(object sender)
+        {
+
         }
 
         public void DescribeParty(Party party)
