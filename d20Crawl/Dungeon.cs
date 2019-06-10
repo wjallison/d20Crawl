@@ -13,6 +13,8 @@ namespace d20Crawl
         public string name;
         public int reward;
 
+        public int activeRoom = 0;
+
         public Dungeon(int lvl)
         {
             level = lvl;

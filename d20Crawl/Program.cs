@@ -108,6 +108,8 @@ namespace d20Crawl
 
             Party party = new Party(initACs);
 
+            Dungeon dungeon = new Dungeon(1);
+
 
 
 
