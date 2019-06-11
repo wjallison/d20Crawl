@@ -110,8 +110,80 @@ namespace d20Crawl
 
             Dungeon dungeon = new Dungeon(1);
 
+            /*Order:
+             * 
+             * BEFORE ENTERING ROOM:
+             * opportunity to heal, change gear, etc
+             * 
+             * UPON ENTERING ROOM:
+             * Describe size of room, ex. narrow, wide, etc
+             * Describe visible NPCs
+             * Set party order
+             * 
+             * 
+             * COMBAT BEGINS
+             * Roll for starting turn timer
+             * 
+             * PC TURN
+             * "Wat do?"
+             * Target:
+             * 0: Self
+             * 1: Party member 1
+             * ...
+             * n: NPC 1
+             * ...
+             *
+             * 
+             * NPC TURN
+             * [NPC] attacks [target] using [attack name]
+             * 
+             * PLAYER INCAP
+             * [PC] is totally dead, but for this game is just knocked out!
+             * 
+             * NPC INCAP
+             * The [NPC] dies!
+             * 
+             * 
+             * COMBAT ENDS
+             * Allocate EXP
+             * Allocate loot
+             * 
+             * Give choice: continue or go back?
+             * 
+             * 
+             * 
+             * */
 
+            //int roomCt = 0;
+            while(dungeon.activeRoom <= dungeon.rooms.Count)
+            {
+                bool beforeEntryLoop = true;
+                while (beforeEntryLoop)
+                {
+                    Console.WriteLine("Do something before entering the next room? ({ENTER} key to continue");
+                    Console.WriteLine("0: ");
 
+                    System.ConsoleKeyInfo ch = Console.ReadKey();
+                    switch (ch.Key)
+                    {
+                        case ConsoleKey.Enter:
+                            beforeEntryLoop = false;
+                            break;
+                        case ConsoleKey.D0:
+                            break;
+                    }
+                }
+
+                DescribeRoom(dungeon.rooms[dungeon.activeRoom]);
+
+                //Console.WriteLine()
+                
+            }
+
+            //BEFORE ENTERING ROOM
+            //TODO: Actions for before entering room
+
+            //UPON ENTERING ROOM:
 
 
             #endregion
@@ -139,9 +211,21 @@ namespace d20Crawl
             }
         }
 
-        public void DescribeRoom(Room room)
+        public static void DescribeRoom(Room room)
         {
+            Console.WriteLine("Your party enters the room.");
+            Console.WriteLine(room.description);
+            Console.WriteLine(room.width + " people can stand side by side.");
 
+            for(int i = 0; i < room.enemies.Count; i++)
+            {
+                DescribeNPC(room.enemies[i]);
+            }
+        }
+
+        public static void DescribeNPC(NPC npc)
+        {
+            Console.WriteLine("A " + npc.name + " faces you.");
         }
     }
 }

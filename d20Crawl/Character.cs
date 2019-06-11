@@ -20,7 +20,7 @@ namespace d20Crawl
         public delegate void turnEvent(object sender);
         public event turnEvent takeTurn;
 
-        public int turnTimer = 10;
+        public int turnTimer = 20;
         public void TurnIter(int iter = 1)
         {
             turnTimer -= iter;

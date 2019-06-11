@@ -34,7 +34,7 @@ namespace d20Crawl
         public int encounterLevels;
         //TODO: descriptions
         public string description;
-
+        public int width;
 
         public Room(int lvl, bool bossRoom = false)
         {
