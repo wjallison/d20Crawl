@@ -155,11 +155,18 @@ namespace d20Crawl
              * */
 
             //int roomCt = 0;
-            while(dungeon.activeRoom <= dungeon.rooms.Count)
+
+
+            
+
+            
+            while (dungeon.activeRoom <= dungeon.rooms.Count)
             {
                 bool beforeEntryLoop = true;
                 while (beforeEntryLoop)
                 {
+                    //BEFORE ENTERING ROOM
+                    //TODO: Actions for before entering room
                     Console.WriteLine("Do something before entering the next room? ({ENTER} key to continue");
                     Console.WriteLine("0: ");
 
@@ -173,17 +180,37 @@ namespace d20Crawl
                             break;
                     }
                 }
-
+                //UPON ENTERING ROOM:
+                //Describe the room
                 DescribeRoom(dungeon.rooms[dungeon.activeRoom]);
 
+                //Decide party order
+                //TODO: Enable keeping order from previous room
+
+                for (int i = 0; i < party.roster.Count; i++)
+                {
+                    Console.WriteLine(party.roster[i].name + ", where will you stand?");
+                    Console.WriteLine("0: Front");
+                    Console.WriteLine("1: Mid");
+                    Console.WriteLine("2: Back");
+
+                    try
+                    {
+                        party.roster[i].SetLine(Convert.ToInt16(Console.ReadKey().KeyChar));
+                    }
+                    catch { party.roster[i].SetLine(0); }
+                }
+
+                //Roll for initiative
+
+
+
+
                 //Console.WriteLine()
-                
+
             }
 
-            //BEFORE ENTERING ROOM
-            //TODO: Actions for before entering room
-
-            //UPON ENTERING ROOM:
+           
 
 
             #endregion
